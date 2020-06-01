@@ -1,9 +1,12 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
 }
 
 .App-logo {
-  height: 40vmin;
+  margin-top: 30px;
+  height: 20vmin;
   pointer-events: none;
 }
 
@@ -14,8 +17,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,5 +35,33 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.Calc {
+  margin: auto;
+  width: 60%;
+  max-width: 550px;
+}
+
+.CalcPaper {
+  padding: 25px;
+  background-color: #e8e8e8;
+  font-size: 1.2em;
+  font-family: cursive;
+}
+
+.Link {
+  padding-top: 25px;
+}
+
+/* 
+  760px - smallest size to fit each full row with values
+  278px - smallest size to fit each title of row fully, not with values
+*/
+@media only screen and (max-width: 760px) {
+  .Calc {
+    width: 95%;
+    min-width: 278px;
   }
 }
